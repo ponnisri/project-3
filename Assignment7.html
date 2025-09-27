@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oval Eye Movement</title>
+  <style>
+    body {
+      background: #154757; /* dark teal like your screenshot */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .face {
+      display: flex;
+      gap: 40px;
+    }
+
+    .eye {
+      width: 120px;
+      height: 70px;
+      background: white;
+      border-radius: 50% / 50%; /* makes it oval horizontally */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pupil {
+      width: 45px;
+      height: 45px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.05s linear;
+    }
+  </style>
+</head>
+<body>
+  <div class="face">
+    <div class="eye"><div class="pupil"></div></div>
+    <div class="eye"><div class="pupil"></div></div>
+  </div>
+
+  <script src="Assignment7.js"></script>
+</body>
+</html>
